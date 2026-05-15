@@ -50,11 +50,11 @@ void peek(struct Node *top){
 }
 int main(){
     struct Node *top=NULL;
-    push(top,10);
-    push(top,20);
-    push(top,23);
+    top=push(top,10);
+    top=push(top,20);
+    top=push(top,23);
     peek(top);
-    pop();
+    top=pop();
     peek();
     return 0;
 }
